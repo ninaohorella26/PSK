@@ -1,0 +1,16 @@
+presentvalue <- function(num, A,i,t,m=TRUE)
+  switch(num, 
+         satu = {
+           pvtunggal=A/(1+i*t)
+           print(pvtunggal)
+         },
+         dua = {
+           pvnominal=A*(1+i/m)^(-m*t)
+           print(pvnominal)
+           
+         },
+         tiga={
+           pvkontinu=A*exp(-i*t)
+           print(pvkontinu)
+         }
+  )
