@@ -1,0 +1,17 @@
+#pokok= nilai nomminal
+#r=tingkat kupon
+#i=tingkat yield
+#m=banyak pemberian bunga dalam 1 tahun
+#t= tahun
+
+setwd("D:\\PENTING!!!\\kuliah semester 4\\psk r")
+obligasinkali<-function(pokok,r,i,t,m){
+  n=m*t
+  ix=i/m
+  rx=r/m
+  Vx=1/(1+ix)
+  a=((1-(Vx^n))/ix)
+  P=(pokok*rx*a)+(pokok*(Vx^n))
+  return(P)
+}
+
