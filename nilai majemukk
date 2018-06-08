@@ -1,0 +1,4 @@
+nina<-function(k,i,t,m){
+  nilaimajemuk=k*(1+i/m)^(m*t)
+  return(nilaimajemuk)
+}
