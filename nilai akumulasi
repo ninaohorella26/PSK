@@ -1,0 +1,13 @@
+#A:nilai akumulasi
+#i:bunga
+#m=bunga majemuk
+#t=tahun
+#k=modal
+#pilihan(num)
+#1:majemuk
+#2:tunggal
+#3:kontinu
+nina<-function(k,i,t){
+  nilaiakumulasi=k*(1+i)^t
+  return(nilaiakumulasi)
+}
