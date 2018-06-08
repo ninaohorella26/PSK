@@ -1,0 +1,24 @@
+                                                                                                                                 #i:bunga
+#m=bunga majemuk
+#t=tahun
+#k=modal
+#pilihan(num)
+#1:majemuk
+#2:tunggal
+#3:kontinu
+akumulasi <- function(num, k,i,t,m=TRUE)
+  switch(num, 
+         satu = {
+           majemuktunggal=k*(1+i*t)
+           print(majemuktunggal)
+         },
+         dua = {
+           majemuknominal=k*(1+i/m)^(m*t)
+           print(majemuknominal)
+           
+         },
+         tiga={
+           majemukkontinu=k*exp(i*t)
+           print(majemukkontinu)
+         }
+  )
